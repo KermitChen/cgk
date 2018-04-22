@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+		<script src="../common/js/vue/vue.min.js"></script>
+		<script type="text/javascript" src="../dwr/engine.js"></script>
+		<script type="text/javascript" src="../dwr/util.js"></script>
+		<script type="text/javascript" src="../dwr/interface/pushMessageCompont.js"></script>
+	</head>
+	<body>
+		<div id="app">
+		    <input v-bind:value="msg">
+			<p>{{ reversedMsg }}</p>
+		</div>
+		<script>
+			new Vue({
+				el : '#app',//指Vue实例挂载的元素节点，作用范围
+				data : {
+					msg : 'ABCDEFG'
+				},
+				computed: {
+				    // 计算属性的 getter
+				    reversedMsg: function () {
+				      // `this` 指向 vm 实例
+				      return this.msg.split('').reverse().join('')
+				    }
+				}
+			})
+			
+			//加载dwr组件
+			onPageLoad();
+			dwr.engine.setActiveReverseAjax(true);
+			dwr.engine.setNotifyServerOnPageUnload(true);
+			
+			function onPageLoad() {
+				pushMessageCompont.onPageLoad("system@123456");
+			}
+			
+			function showMessage(sendMessages, clickEvent) {
+				alert(sendMessages);
+			}
+			
+			//重写错误方法
+			dwr.engine._errorHandler = function(message, ex) {
+				
+			};
+		</script>
+	</body>
+</html>

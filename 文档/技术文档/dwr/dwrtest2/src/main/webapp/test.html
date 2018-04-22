@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>测试实例</title>
+		<script type="text/javascript" src="dwr/engine.js"></script>
+		<script type="text/javascript" src="dwr/util.js"></script>
+		<script type="text/javascript" src="dwr/interface/pushMessageCompont.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<label id="labelId1"></label>
+		</div>
+		<script>
+			//加载dwr组件
+			onPageLoad();
+			dwr.engine.setActiveReverseAjax(true);
+			dwr.engine.setNotifyServerOnPageUnload(true, true);
+			
+			function onPageLoad() {
+				pushMessageCompont.onPageLoad("system@123456");
+			}
+			
+			function showMessage(sendMessages, clickEvent) {
+				document.getElementById('labelId1').innerHTML = "当前时间：" + sendMessages;;
+			}
+			
+			//重写错误方法
+			dwr.engine._errorHandler = function(message, ex) {
+				
+			};
+		</script>
+	</body>
+</html>

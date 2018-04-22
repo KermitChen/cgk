@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>test.html</title>
+	</head>
+	<body>
+		<label id="labelId1"></label>
+		<label id="labelId2"></label>
+		<label id="labelId3"></label>
+		<label id="labelId4"></label>
+		<label id="labelId6"></label>
+		<label id="labelId7"></label>
+	</body>
+	<script src='dwr/engine.js'></script>
+	<script src='dwr/util.js'></script>
+	<script src='dwr/interface/test1.js'></script>
+	<script type="text/javascript">
+	    //需要传递参数，也没有返回值，则不需要传递回调函数
+	    test1.method();
+	    
+		test1.method1(function(data) {
+			document.getElementById('labelId1').innerHTML = data + "<br/>";
+		});
+		
+		//传递参数和回调函数，注意按java方法参数排列顺序把参数排在回调函数前
+		test1.method2("前端调用java方法", function(data) {
+			document.getElementById('labelId2').innerHTML = data + "<br/>";
+		});
+		
+		test1.method3(callBackFunc3);
+		//回调函数
+		function callBackFunc3(data) {
+			document.getElementById('labelId3').innerHTML = data + "<br/>";
+		}
+		
+		test1.method4(function(data) {
+			document.getElementById('labelId4').innerHTML = data.id + "==" + data.name + "<br/>";
+		});
+		
+		var people = new Object();
+		people.id = 2;
+		people.name = '李四';
+		test1.method6(people, function(data) {
+			document.getElementById('labelId6').innerHTML = data + "<br/>";
+		});
+		
+		test1.method7(function(data) {
+		    var str = "";
+		    for(var i=0;i < data.length;i++) {
+		    	str = str + data[i].id + "==" + data[i].name + "======"; 
+		    }
+			document.getElementById('labelId7').innerHTML = str + "<br/>";
+		});
+	</script>
+</html>
