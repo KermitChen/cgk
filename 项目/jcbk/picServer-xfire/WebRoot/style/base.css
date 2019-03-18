@@ -1,0 +1,14 @@
+@charset "utf-8";
+body {font-family: "宋体"; font-size:12px; margin:0; padding:0; text-align:center;}
+div{ text-align:left}	
+.header{ width:100%; margin:0 auto; height:113px; font-size:14px;background:url(/bk/image/head_03.jpg) repeat-x}
+.left{ float:left}
+.right{ float:right}
+.header_right{ float:right;position: absolute;right:20px;top:0px; line-height:113px }
+.main{ width:100%; height:501px; margin:5 auto; background:url(/bk/image/main_bg.jpg) repeat-x}
+.mainbg_left{ width:3px; height:501px; float:left}
+.mainbg_right{ width:3px; height:501px; float:right;}
+.main_left{ width:20%;height:470px; float:left; margin:10px 0 0 10px; background:url(/bk/image/left_bg.jpg) repeat-x}
+
+.main_right{ width:73%; height:470px; float:right; background:url(/bk/image/right_bg.jpg) repeat-x; margin-top:10px}
+.footer{ width:90%; margin:5px auto 10px auto; line-height:30px; font-size:14px;clear:both;height:50px; text-align:center;padding:20px 0 0px 0;}

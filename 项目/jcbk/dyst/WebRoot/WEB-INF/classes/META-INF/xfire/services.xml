@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xfire.codehaus.org/config/1.0">
+<!--	<service>-->
+<!--		<name>InAccess</name>-->
+<!--		<serviceClass>com.dyst.webservice.IInAccessService</serviceClass>-->
+<!--		<implementationClass>com.dyst.webservice.InAccessServiceImpl</implementationClass>-->
+<!--		<namespace>http://webservice.dyst.com</namespace>-->
+<!--		<style>wrapped</style>-->
+<!--		<use>literal</use>-->
+<!--		<scope>application</scope>-->
+		<!-- 默认http为true -->
+<!--		<createDefaultBindings>true</createDefaultBindings>-->
+<!--		<bindings>-->
+			<!-- SOAP 1.1 -->
+			<!-- <soap11Binding name="tns:HIPMessageServiceSOAP11Binding" transport="http://schemas.xmlsoap.org/soap/http" allowUndefinedEndpoints="true"></soap11Binding> -->
+			<!-- SOAP 1.2 -->
+<!--			<soap12Binding name="tns:HIPMessageServiceSOAP12Binding" transport="http://www.w3.org/2003/05/soap/bindings/HTTP/" allowUndefinedEndpoints="true"></soap12Binding>-->
+<!--		</bindings>-->
+<!--	</service>-->
+</beans>

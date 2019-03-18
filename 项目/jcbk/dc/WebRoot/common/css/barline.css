@@ -1,0 +1,47 @@
+@charset "utf-8";
+.bar_content {
+	height:80px;
+	width:230px;
+	z-index: -1;
+	display: none;
+}
+
+.barline {
+	float: left;
+	width: 200px;
+	background: #FFF;
+	border: 2px solid #ACD429;
+	height: 12px;
+	display: inline-block;
+	border-radius: 8px;
+	display: none;
+	position: absolute;
+	left: 10px;
+	top: 30px;
+}
+
+.barline #percent {
+	position: absolute;
+	left: 0px;
+	top: -30px;
+	display: inline-block;
+	color: #ACD429;
+	font-size: 16px;
+}
+
+.barline #line {
+	float: left;
+	height: 12px;
+	overflow: hidden;
+	background: #ACD429;
+	border-radius: 8px;
+}
+
+.barline #msg {
+	position: absolute;
+	left: 80px;
+	top: 30px;
+	display: inline-block;
+	color: #ACD429;
+	font-size: 14px;
+}

@@ -1,0 +1,207 @@
+@CHARSET "UTF-8";
+/* reset */
+*{margin: 0;padding: 0;}
+body{font-size: 14px;color: #333;font-family: "Microsoft YaHei";overflow:hidden; }
+ul,li{list-style: none;}
+a{text-decoration: none;cursor: pointer;color: #333;}
+h1,h2,h3,h4,h5,h6{font-weight: normal !important;}
+input, button, textarea, select {font-family: inherit;font-size: inherit;font-weight: inherit;vertical-align: middle;}
+
+.button_blue{
+	padding: 2px 8px;
+	border: none;
+	color: #fff;
+	background: #08f;
+	/*behavior: url(ie-css3.htc);*/
+	border-radius: 6px;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #fff;
+}
+.button_blue:hover{
+	background: #fff;
+	border: 1px solid #ccc;
+	color: #555;
+}
+.button_white{
+	padding: 2px 8px;
+	border: none;
+	color: #555;
+	background: #F2F2F2;
+	/*behavior: url(ie-css3.htc);*/
+	border-radius: 6px;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #ccc;
+}
+.button_white:hover{
+	background: #fff;
+	border: 1px solid #ccc;
+	color: #555;
+}
+.input_text{
+	border: 1px solid #CDC28D; /* 输入框表框颜色*/
+	background-color: #F2F9FD; /* 输入框背景颜色*/
+	height: 22px; /*输入框高度*/
+	width: 180px; /*输入框宽度*/
+}
+
+.container{
+    width: 100%;
+    height: auto; 
+}
+.header{
+	margin: 15px;
+    position: relative;
+    display: block;
+    width: 560px;
+    height: 40px; 
+}
+.bodyer{
+	margin: 15px;
+    position: relative;
+    display: block;
+    width: 560px;
+    height: 280px; 
+    border: 1px solid #d0d0d0;
+}
+
+.footer{
+	margin: 15px;
+    position: relative;
+    display: block;
+    width: 560px;
+    height: 30px; 
+    text-align: center;
+}
+.slider_body{
+	margin: 10px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 180px;
+    height: 28px; 
+}
+.slider_body1{
+	margin: 10px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 180px;
+    height: 28px; 
+}
+.slider_body2{
+	margin: 10px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 40px;
+    height: 28px; 
+}
+.lefter{
+	margin: 10px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 230px;
+    height: 260px; 
+    border: 1px solid #d0d0d0;
+    overflow-y:auto; 
+}
+.centre{
+    position: relative;
+    display: block;
+    float: left;
+    width: 30px;
+    margin:10px;
+    height: 260px;
+}
+.righter{
+	margin: 10px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 235px;
+    height: 260px;
+    border: 1px solid #d0d0d0;
+    overflow-y:auto;
+}
+
+.data_li{
+	height: 25px;
+    line-height: 25px;
+    position: relative;
+    text-indent: 20px;
+}
+.data_li:hover{
+	border:1px solid #2cb7fe !important;
+	display: block;
+	text-decoration: none;
+	cursor:pointer;
+}
+.data_li span{
+	margin:0 15px;
+}
+.right_arrows{
+	background:url("../../images/arrows/right.png") no-repeat;
+	background-size:contain;
+	margin: 70px 5px 15px 5px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px; 
+}
+.right_arrows:hover{
+	background:url("../../images/arrows/right_blank.png") no-repeat;
+	background-size:contain;
+}
+.left_arrows{
+	background:url("../../images/arrows/left.png") no-repeat;
+	background-size:contain;
+	margin: 0 5px 15px 5px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px; 
+}
+.left_arrows:hover{
+	background:url("../../images/arrows/left_blank.png") no-repeat;
+	background-size:contain;
+}
+.double_right_arrows{
+	background:url("../../images/arrows/double_right.png") no-repeat;
+	background-size:contain;
+	margin: 0 5px 15px 5px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px; 
+}
+.double_right_arrows:hover{
+	background:url("../../images/arrows/double_right_blank.png") no-repeat;
+	background-size:contain;
+}
+.double_left_arrows{
+	background:url("../../images/arrows/double_left.png") no-repeat;
+	background-size:contain;
+	margin: 0 5px 15px 5px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px; 
+}
+.double_left_arrows:hover{
+	background:url("../../images/arrows/double_left_blank.png") no-repeat;
+	background-size:contain;
+}
+
+
+
+
+
+
+

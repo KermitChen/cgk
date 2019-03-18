@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- WebService配置 	-->
+	<bean id="springWebservicesBean" class="com.dyst.webservice.InAccessServiceImpl"/>
+   	<!-- 并行接口数据实现类配置 -->
+</beans>

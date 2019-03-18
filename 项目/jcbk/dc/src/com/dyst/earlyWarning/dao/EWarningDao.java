@@ -1,0 +1,44 @@
+package com.dyst.earlyWarning.dao;
+
+import java.io.Serializable;
+import java.util.List;
+import java.util.Map;
+
+import com.dyst.base.dao.BaseDao;
+import com.dyst.base.utils.PageResult;
+import com.dyst.base.utils.QueryHelper;
+import com.dyst.earlyWarning.entities.EWRecieve;
+import com.dyst.earlyWarning.entities.EWarning;
+import com.dyst.earlyWarning.entities.Instruction;
+import com.dyst.earlyWarning.entities.InstructionSign;
+
+public interface EWarningDao extends BaseDao{
+	//根据ID查询
+	public EWarning findObjectById(Serializable id);
+	
+	//根据ID 查询预警签收
+	public EWRecieve findEWRecieveById(Serializable id);
+	
+	//根据ID 查询指令
+	public Instruction findInstructionByQsId(Serializable qsid);
+	
+	//根据ID 查询指令签收
+	public InstructionSign findInstructionSignById(Serializable id);
+		
+	//多条件语句查询
+	public List findObjects(String hql, List<Object> parameters);
+	
+	//查询预警签收
+	public List<EWRecieve> findEWRecieve(String hql, List<Object> parameters);
+	
+	//使用 QueryHelper 多条件查询
+	public List<EWRecieve> findObjects(QueryHelper queryHelper);
+	
+	//带分页的多条件查询
+	public PageResult getPageResult(QueryHelper queryHelper, int pageNo,int pageSize);
+	
+	// 带分页的多条件查询
+	public PageResult getPageResult(String hql, List<Object> parameters, int pageNo, int pageSize);
+
+	public List<Map> findList(String hql, List<Object> parameters);
+}
